@@ -3,18 +3,18 @@
 
 #include "sorters/sorter.h"
 
-class IndexSorter : public qqsfpm::Sorter
+class IndexSorter : public SFPM_NAMESPACE::Sorter
 {
 public:
-    using qqsfpm::Sorter::Sorter;
-    int compare(const QModelIndex& sourceLeft, const QModelIndex& sourceRight, const qqsfpm::QQmlSortFilterProxyModel& proxyModel) const override;
+    using SFPM_NAMESPACE::Sorter::Sorter;
+    int compare(const QModelIndex& sourceLeft, const QModelIndex& sourceRight, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel) const override;
 };
 
-class ReverseIndexSorter : public qqsfpm::Sorter
+class ReverseIndexSorter : public SFPM_NAMESPACE::Sorter
 {
 public:
-    using qqsfpm::Sorter::Sorter;
-    int compare(const QModelIndex& sourceLeft, const QModelIndex& sourceRight, const qqsfpm::QQmlSortFilterProxyModel& proxyModel) const override;
+    using SFPM_NAMESPACE::Sorter::Sorter;
+    int compare(const QModelIndex& sourceLeft, const QModelIndex& sourceRight, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel) const override;
 };
 
 #endif // INDEXSORTER_H

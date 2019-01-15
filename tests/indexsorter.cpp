@@ -1,13 +1,13 @@
 #include "indexsorter.h"
 #include <QtQml>
 
-int IndexSorter::compare(const QModelIndex &sourceLeft, const QModelIndex &sourceRight, const qqsfpm::QQmlSortFilterProxyModel& proxyModel) const
+int IndexSorter::compare(const QModelIndex &sourceLeft, const QModelIndex &sourceRight, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel) const
 {
     Q_UNUSED(proxyModel)
     return sourceLeft.row() - sourceRight.row();
 }
 
-int ReverseIndexSorter::compare(const QModelIndex &sourceLeft, const QModelIndex &sourceRight, const qqsfpm::QQmlSortFilterProxyModel& proxyModel) const
+int ReverseIndexSorter::compare(const QModelIndex &sourceLeft, const QModelIndex &sourceRight, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel) const
 {
     Q_UNUSED(proxyModel)
     return sourceRight.row() - sourceLeft.row();

@@ -16,14 +16,14 @@ void StaticRole::setValue(const QVariant& value)
     invalidate();
 }
 
-QVariant StaticRole::data(const QModelIndex& sourceIndex, const qqsfpm::QQmlSortFilterProxyModel& proxyModel)
+QVariant StaticRole::data(const QModelIndex& sourceIndex, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel)
 {
     Q_UNUSED(sourceIndex)
     Q_UNUSED(proxyModel)
     return m_value;
 }
 
-QVariant SourceIndexRole::data(const QModelIndex& sourceIndex, const qqsfpm::QQmlSortFilterProxyModel& proxyModel)
+QVariant SourceIndexRole::data(const QModelIndex& sourceIndex, const SFPM_NAMESPACE::QQmlSortFilterProxyModel& proxyModel)
 {
     Q_UNUSED(proxyModel)
     return sourceIndex.row();
@@ -34,7 +34,7 @@ QStringList MultiRole::names()
     return {"role1", "role2"};
 }
 
-QVariant MultiRole::data(const QModelIndex&, const qqsfpm::QQmlSortFilterProxyModel&, const QString& name)
+QVariant MultiRole::data(const QModelIndex&, const SFPM_NAMESPACE::QQmlSortFilterProxyModel&, const QString& name)
 {
     return "data for " + name;
 }

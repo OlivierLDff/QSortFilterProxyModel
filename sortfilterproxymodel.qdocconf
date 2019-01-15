@@ -1,7 +1,7 @@
 project = SortFilterProxyModel
 description = lol
 
-sourcedirs = .
+sourcedirs = ./src
 
 sources.fileextensions = "*.cpp *.qdoc *.qml"
 headers.fileextensions = "*.h"
