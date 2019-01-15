@@ -84,7 +84,8 @@ public:
 
     Q_INVOKABLE int roleForName(const QString& roleName) const;
 
-    Q_INVOKABLE QVariantMap get(int row) const;
+	Q_INVOKABLE QVariantMap getAsMap(int row) const;
+    Q_INVOKABLE QVariant get(int row) const;
     Q_INVOKABLE QVariant get(int row, const QString& roleName) const;
 
     Q_INVOKABLE QModelIndex mapToSource(const QModelIndex& proxyIndex) const override;
