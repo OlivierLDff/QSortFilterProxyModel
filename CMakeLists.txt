@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1)
+CMAKE_MINIMUM_REQUIRED( VERSION 3.1.0 )
 
 SET( SFPM_TARGET "SortFilterProxyModel" CACHE STRING "Target Name" )
 SET( SFPM_PROJECT "Sfpm" CACHE STRING "Project Name")
