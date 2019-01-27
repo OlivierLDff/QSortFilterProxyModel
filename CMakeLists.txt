@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED( VERSION 3.1.0 )
 
-SET( SFPM_TARGET "SortFilterProxyModel" CACHE STRING "Target Name" )
-SET( SFPM_PROJECT "Sfpm" CACHE STRING "Project Name")
+SET( SFPM_TARGET "QSortFilterProxyModel" CACHE STRING "Target Name" )
+SET( SFPM_PROJECT "QSortFilterProxyModel" CACHE STRING "Project Name")
 SET( SFPM_BUILD_SHARED OFF CACHE BOOL "Build as a shared library" )
 SET( SFPM_USE_NAMESPACE ON CACHE BOOL "Should the library be compiled with a namespace. Default: ON" )
 SET( SFPM_NAMESPACE "Sfpm" CACHE STRING "Namespace of the library is SFPM_USE_NAMESPACE is ON. Default : Sfpm" )
