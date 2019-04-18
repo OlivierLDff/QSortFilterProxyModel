@@ -563,7 +563,7 @@ void Register::RegisterTypes(const char* uri)
     qmlRegisterType<FilterRole>(_uri, GetMajor(), GetMinor(), SFPM_TYPENAME_WITH_NAMESPACE(SFPM_NAMESPACE, "FilterRole"));
 }
 
-void Register::RegisterTypesNoNamespace(const char* uri)
+void Register::registerTypesNoNamespace(const char* uri)
 {
     const char* _uri = uri ? uri : "SortFilterProxyModel";
     

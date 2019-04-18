@@ -153,7 +153,7 @@ class SFPM_API_ Register
 {
 public:
 	static void RegisterTypes(const char* uri = nullptr);
-	static void RegisterTypesNoNamespace(const char* uri = nullptr);
+	static void registerTypesNoNamespace(const char* uri = nullptr);
 	/** Library Major Version */
 	static uint32_t GetMajor();
 	/** Library Minor Version */
