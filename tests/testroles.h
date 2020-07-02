@@ -1,7 +1,7 @@
 #ifndef TESTROLES_H
 #define TESTROLES_H
 
-#include "proxyroles/singlerole.h"
+#include <SortFilterProxyModel/proxyroles/singlerole.h>
 #include <QVariant>
 
 class StaticRole : public qqsfpm::SingleRole
@@ -43,5 +43,7 @@ public:
 private:
     QVariant data(const QModelIndex &sourceIndex, const qqsfpm::QQmlSortFilterProxyModel &proxyModel, const QString &name) override;
 };
+
+void registerTestRolesTypes();
 
 #endif // TESTROLES_H

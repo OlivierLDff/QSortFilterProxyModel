@@ -8,13 +8,13 @@ Install
 ##### With [qpm](https://qpm.io) :
 1. `qpm install fr.grecko.sortfilterproxymodel`
 2. add `include(vendor/vendor.pri)` in your .pro if it is not already done
-3. `import SortFilterProxyModel 0.2` to use this library in your QML files
+3. `import SortFilterProxyModel 1.0` to use this library in your QML files
 
 ##### Without qpm :
 1. clone or download this repository
 2. * `qmake` add `include  (<path/to/SortFilterProxyModel>/SortFilterProxyModel.pri)` in your `.pro`
    * `CMake` add $<TARGET_OBJECTS:SortFilterProxyModel> to the sources of your executable target in your cmake project
-3. `import SortFilterProxyModel 0.2` to use this library in your QML files
+3. `import SortFilterProxyModel 1.0` to use this library in your QML files
 
 Sample Usage
 ------------
@@ -23,7 +23,7 @@ Sample Usage
 ```qml
 import QtQuick 2.2
 import QtQuick.Controls 1.2
-import SortFilterProxyModel 0.2
+import SortFilterProxyModel 1.0
 
 ApplicationWindow {
     visible: true

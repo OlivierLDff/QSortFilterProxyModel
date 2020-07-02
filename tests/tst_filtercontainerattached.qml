@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import SortFilterProxyModel 0.2
+import SortFilterProxyModel 1.0
 import QtQml.Models 2.2
 import QtQml 2.2
 import QtTest 1.1
