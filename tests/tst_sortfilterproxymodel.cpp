@@ -16,8 +16,7 @@ public:
 public slots:
     void qmlEngineAvailable(QQmlEngine *engine)
     {
-        qqsfpm::utils::registerTypes();
-        qqsfpm::utils::loadResources();
+        qqsfpm::registerQmlTypes();
         registerIndexSorterTypes();
         registerTestRolesTypes();
     }
