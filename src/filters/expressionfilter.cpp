@@ -58,6 +58,10 @@ bool ExpressionFilter::filterRow(const QModelIndex& sourceIndex, const QQmlSortF
         QHash<int, QByteArray> roles = proxyModel.roleNames();
 
         QQmlContext context(qmlContext(this));
+
+        if(!context.isValid())
+            return false;
+
         auto addToContext = [&] (const QString &name, const QVariant& value) {
             context.setContextProperty(name, value);
             modelMap.insert(name, value);
